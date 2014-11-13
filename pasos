@@ -7,3 +7,4 @@ git status
 git commit -m "commit inicial"
 git config --global user.email "carlitos.ariel93@gmail.com"
 git config --global user.name "CarlosAriel"
+git push origin master
