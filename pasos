@@ -1,0 +1,9 @@
+sudo apt-get install git
+git clone https://github.com/CarlosAriel/ROS-ARDRUINO.git
+cd ROS-ARDRUINO/
+touch RC-ROS.ino
+git add RC-ROS.ino
+git status
+git commit -m "commit inicial"
+git config --global user.email "carlitos.ariel93@gmail.com"
+git config --global user.name "CarlosAriel"
