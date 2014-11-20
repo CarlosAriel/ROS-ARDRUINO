@@ -1,4 +1,27 @@
-void(){
-}
-void setup(){
-}
+/*
+ * rosserial Servo Control Example
+ *
+ * This sketch demonstrates the control of hobby R/C servos
+ * using ROS and the arduiono
+ * 
+ * For the full tutorial write up, visit
+ * www.ros.org/wiki/rosserial_arduino_demos
+ *
+ * For more information on the Arduino Servo Library
+ * Checkout :
+ * http://www.arduino.cc/en/Reference/Servo
+ */
+
+#if (ARDUINO >= 100)
+ #include <Arduino.h>
+#else
+ #include <WProgram.h>
+#endif
+
+#include <ros.h>
+#include <geometry_msgs/Twist.h>
+
+int R_ADELANTE = 5;
+int R_ATRAS = 6;
+int L_ADELANTE = 11;
+int L_ATRAS = 10;
