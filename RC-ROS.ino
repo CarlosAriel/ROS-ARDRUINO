@@ -32,3 +32,17 @@ void servo_cb( const geometry_msgs::Twist& cmd_msg){
   if (cmd_msg.angular.z == 0 && cmd_msg.linear.x == 0 ){
       // parar
   } else{
+
+ if (cmd_msg.angular.z < 0){
+  int a=cmd_msg.angular.z * 255;
+   derecha(a);
+ } else if(cmd_msg.angular.z > 0){
+   izquierda(255)
+  }else if(cmd_msg.linear.x < 0){
+    // atras
+  }else if(cmd_msg.linear.x > 0){
+    // adelante
+  }
+  }
+  digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
+}
