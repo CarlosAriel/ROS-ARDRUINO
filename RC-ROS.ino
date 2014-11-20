@@ -25,3 +25,10 @@ int R_ADELANTE = 5;
 int R_ATRAS = 6;
 int L_ADELANTE = 11;
 int L_ATRAS = 10;
+
+ros::NodeHandle  nh;
+
+void servo_cb( const geometry_msgs::Twist& cmd_msg){
+  if (cmd_msg.angular.z == 0 && cmd_msg.linear.x == 0 ){
+      // parar
+  } else{
