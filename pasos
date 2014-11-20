@@ -8,3 +8,16 @@ git commit -m "commit inicial"
 git config --global user.email "carlitos.ariel93@gmail.com"
 git config --global user.name "CarlosAriel"
 git push origin master
+
+
+
+
+
+usar autito
+
+en un terminal escribir roscore
+en otro rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0
+rosrun rqt_ez_publisher rqt_ez_publisher
+
+si no esta insdtalado
+sudo apt-get install ros-indigo-rqt-ez-publisher
