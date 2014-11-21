@@ -46,3 +46,13 @@ void servo_cb( const geometry_msgs::Twist& cmd_msg){
   }
   digitalWrite(13, HIGH-digitalRead(13));  //toggle led  
 }
+
+ros::Subscriber<geometry_msgs::Twist> sub("cmd_vel", servo_cb);
+/*rodrigo1*/
+void setup(){
+  pinMode(13, OUTPUT);
+
+  nh.initNode();
+  nh.subscribe(sub);
+}
+
