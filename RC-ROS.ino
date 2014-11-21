@@ -55,4 +55,16 @@ void setup(){
   nh.initNode();
   nh.subscribe(sub);
 }
+/*rodrigo2*/
+void loop(){
+  nh.spinOnce();
+  delay(1);
+}
+
+void adelante(int velocidad){
+analogWrite(R_ADELANTE, velocidad);
+digitalWrite(R_ATRAS, LOW);
+analogWrite(L_ADELANTE, velocidad);
+digitalWrite(L_ATRAS, LOW);
+}
 
