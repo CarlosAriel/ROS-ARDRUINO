@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
   ros::NodeHandle nh;
 
   // Create a subscriber object.
-  ros::Subscriber sub = nh.subscribe("turtle1/pose", 1000,
+  ros::Subscriber sub = nh.subscribe("turtle1/pose", 1500,
     &poseMessageReceived);
 
   // Let ROS take over.
