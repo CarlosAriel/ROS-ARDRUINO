@@ -67,4 +67,10 @@ digitalWrite(R_ATRAS, LOW);
 analogWrite(L_ADELANTE, velocidad);
 digitalWrite(L_ATRAS, LOW);
 }
-
+/*rodrigo3*/
+void atras(int velocidad){
+digitalWrite(R_ADELANTE, LOW);
+analogWrite(R_ATRAS, velocidad);
+digitalWrite(L_ADELANTE, LOW);
+analogWrite(L_ATRAS, velocidad);
+}
