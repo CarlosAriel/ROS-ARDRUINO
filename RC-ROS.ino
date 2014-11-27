@@ -65,3 +65,17 @@ analogWrite(R_ATRAS, velocidad);
 digitalWrite(L_ADELANTE, LOW);
 analogWrite(L_ATRAS, velocidad);
 }
+/*lesmo1*/
+void izquierda(int velocidad){
+analogWrite(R_ADELANTE, velocidad);
+digitalWrite(R_ATRAS, LOW);
+digitalWrite(L_ADELANTE, LOW);
+analogWrite(L_ATRAS, velocidad);
+}
+/*lesmo2*/
+void derecha(int velocidad){
+digitalWrite(R_ADELANTE, LOW);
+analogWrite(R_ATRAS, velocidad);
+analogWrite(L_ADELANTE, velocidad);
+digitalWrite(L_ATRAS, LOW);
+}
